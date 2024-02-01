@@ -5,3 +5,31 @@ html {
   margin: 0px;
   padding: 0px;
 }
+#app {
+  display: grid;
+  gap: 5px;
+  height: 100vh; /* Use viewport height to cover the entire screen height */
+  width: 100vw; /* Use viewport width to cover the entire screen width */
+   
+  grid-template-rows: 40px auto 60px;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "head"
+    "main"
+    "footer"
+ }
+ 
+ header {
+  background-color:blue;
+  grid-area: head;
+ }
+ 
+ main {
+  background-color:red;
+  grid-area: main;
+ }
+ 
+ footer {
+  background-color:green;
+  grid-area: footer;
+ }
