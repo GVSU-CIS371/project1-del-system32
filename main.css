@@ -37,6 +37,11 @@ html {
   border: 1px black;
 
  }
+
+ .store-item {
+  background-color: turquoise;
+  border: 1px black;
+ }
  
  footer {
   background-color:green;
@@ -49,6 +54,10 @@ html {
 
  }
 
- #store-item.span {
-  justify-content: space-between;
+ body>div>header + main>div>span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  
  }
